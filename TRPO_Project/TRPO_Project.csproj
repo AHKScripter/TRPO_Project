@@ -196,5 +196,35 @@
   <ItemGroup>
     <None Include="Resources\astronomy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\target 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\target 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emergency-exit 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emergency-exit 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
