@@ -190,5 +190,11 @@
   <ItemGroup>
     <None Include="Resources\uranus.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astronomy 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astronomy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

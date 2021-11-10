@@ -63,6 +63,26 @@ namespace TRPO_Project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap astronomy {
+            get {
+                object obj = ResourceManager.GetObject("astronomy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap astronomy_2 {
+            get {
+                object obj = ResourceManager.GetObject("astronomy 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap uranus {
             get {
                 object obj = ResourceManager.GetObject("uranus", resourceCulture);
