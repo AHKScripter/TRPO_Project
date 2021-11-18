@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Learning_add_button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFUAAAAnCAYAAAB+HwSQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVGhD7dCxAUBAAMBAk/zK7GcM/WMAFdJdcVW6LGOb
-        +9jOk7/M/Z76FPjC1ICpAVMDpgZMDZgaMDVgasDUgKkBUwOmBkwNmBowNWBqwNSAqQFTA6YGTA2YGjA1
-        YGrA1ICpAVMDpgZMDZgaMDVgasDUgKkBUwOmBpaxzuMp8NI6jwsbAprdbDeHgQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAAA8CAYAAACQPx/OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACzSURBVHhe7dyhDcAwEATBL82lhbvoxHKaGLBgpOPLb2b2
+        Op4QTot/vCGcFgWRFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFART
+        EExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXBFARTEExBMAXB
+        FARTEExBMAXBFARTEExBMAXB3CBdjTP2+gBG/3aqkTNuqAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="textBoxLearning.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Learning_text_box.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAWQAAAAnCAYAAAA4oDJWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADJSURBVHhe7dRBDcMwAARB80flyDAKowAaWfKnBJJ9zEj3
-        OQA7AAhZa33mnD8zM3t+u8Enx2PsA4B37AafHAsywJsEGSBCkAEiBBkgQpABIgQZIEKQASIEGSBCkAEi
-        BBkgQpABIgQZIEKQASIEGSBCkAEiBBkgQpABIgQZIEKQASIEGSBCkAEiBBkgQpABIgQZIEKQASIEGSBC
-        kAEiBBkgQpABIgQZIEKQASIEGSBCkAEiBBkg4i/I13V992FmZs9vN/jkGID3jXEDegGodmOawKYAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAh4AAAA8CAYAAAApOLNeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFASURBVHhe7dYxDQMxAARB80fll2EERgDkZclNAHirGema
+        Q7ADACC11vrMOX9mZmZmN7Zb42THGPsAALhlt8bJDuEBANwlPACAjPAAADLCAwDICA8AICM8AICM8AAA
+        MsIDAMgIDwAgIzwAgIzwAAAywgMAyAgPACAjPACAjPAAADLCAwDICA8AICM8AICM8AAAMsIDAMgIDwAg
+        IzwAgIzwAAAywgMAyAgPACAjPACAjPAAADLCAwDICA8AICM8AICM8AAAMsIDAMgIDwAgIzwAgIzwAAAy
+        wgMAyAgPACAjPACAjPAAADLCAwDICA8AICM8AICM8AAAMsIDAMgIDwAgIzwAgIzwAAAywgMAyAgPACAj
+        PACAjPAAADLCAwDICA8AICM8AICM8AAAMn/h8TzPdx9mZmZmN7Zb42QHAEBhjBc1bSKtz82G+QAAAABJ
+        RU5ErkJggg==
 </value>
   </data>
 </root>
