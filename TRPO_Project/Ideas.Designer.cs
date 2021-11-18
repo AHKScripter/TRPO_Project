@@ -74,6 +74,7 @@ namespace TRPO_Project
             this.Ideas_add_button.WaitOnLoad = false;
             this.Ideas_add_button.Zoom = 0;
             this.Ideas_add_button.ZoomSpeed = 10;
+            this.Ideas_add_button.Click += new System.EventHandler(this.Ideas_add_button_Click);
             // 
             // Ideas_text_box
             // 

@@ -16,5 +16,28 @@ namespace TRPO_Project
         {
             InitializeComponent();
         }
+
+        int poss = 10;
+        public void addItem(string text)
+        {
+            ToDoItem item = new TRPO_Project.ToDoItem(text);
+            Books_list.Controls.Add(item);
+            item.Top = poss;
+            poss = (item.Top + item.Height + 10);
+
+        }
+
+        private void Learning_add_button_Click(object sender, EventArgs e)
+        {
+            string tarName = Books_text_box.Text;
+            addItem(tarName);
+        }
+
+        private void Books_add_button_Click(object sender, EventArgs e)
+        {
+            string tarName = Books_text_box.Text;
+            addItem(tarName);
+            Books_text_box.Text = "";
+        }
     }
 }

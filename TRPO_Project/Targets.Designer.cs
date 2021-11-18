@@ -101,6 +101,7 @@
             this.Targets_add_button.WaitOnLoad = false;
             this.Targets_add_button.Zoom = 0;
             this.Targets_add_button.ZoomSpeed = 10;
+            this.Targets_add_button.Click += new System.EventHandler(this.Targets_add_button_Click);
             // 
             // Targets_text_box
             // 

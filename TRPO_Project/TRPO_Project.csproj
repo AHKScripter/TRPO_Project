@@ -183,6 +183,12 @@
     <Compile Include="Targets.Designer.cs">
       <DependentUpon>Targets.cs</DependentUpon>
     </Compile>
+    <Compile Include="ToDoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToDoItem.Designer.cs">
+      <DependentUpon>ToDoItem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +214,9 @@
     </Compile>
     <EmbeddedResource Include="Targets.resx">
       <DependentUpon>Targets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToDoItem.resx">
+      <DependentUpon>ToDoItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -267,6 +276,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus 2.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_bin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_bin2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

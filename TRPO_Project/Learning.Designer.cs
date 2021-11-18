@@ -101,6 +101,7 @@
             this.Learning_add_button.WaitOnLoad = false;
             this.Learning_add_button.Zoom = 0;
             this.Learning_add_button.ZoomSpeed = 10;
+            this.Learning_add_button.Click += new System.EventHandler(this.Learning_add_button_Click);
             // 
             // Learning_text_box
             // 

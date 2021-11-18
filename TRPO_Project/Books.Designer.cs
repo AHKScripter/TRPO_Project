@@ -101,6 +101,7 @@
             this.Books_add_button.WaitOnLoad = false;
             this.Books_add_button.Zoom = 0;
             this.Books_add_button.ZoomSpeed = 10;
+            this.Books_add_button.Click += new System.EventHandler(this.Books_add_button_Click);
             // 
             // Books_text_box
             // 
