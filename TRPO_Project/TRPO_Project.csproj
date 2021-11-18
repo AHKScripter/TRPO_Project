@@ -157,6 +157,12 @@
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ideas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ideas.Designer.cs">
+      <DependentUpon>Ideas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Learning.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
     <EmbeddedResource Include="Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ideas.resx">
+      <DependentUpon>Ideas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Learning.resx">
       <DependentUpon>Learning.cs</DependentUpon>

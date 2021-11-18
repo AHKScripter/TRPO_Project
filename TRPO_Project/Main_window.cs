@@ -31,5 +31,25 @@ namespace TRPO_Project
         {
             date.Text = DateTime.Today.ToLongDateString();
         }
+
+        private void Menu_Button_Learning_Click(object sender, EventArgs e)
+        {
+            learning1.BringToFront();
+        }
+
+        private void Menu_button_books_Click(object sender, EventArgs e)
+        {
+            books1.BringToFront();
+        }
+
+        private void Menu_button_targets_Click(object sender, EventArgs e)
+        {
+            targets1.BringToFront();
+        }
+
+        private void Menu_button_ideas_Click(object sender, EventArgs e)
+        {
+            ideas1.BringToFront();
+        }
     }
 }

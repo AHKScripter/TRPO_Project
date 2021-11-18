@@ -54,7 +54,7 @@
             this.Books_left_panel.Location = new System.Drawing.Point(9, 43);
             this.Books_left_panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Books_left_panel.Name = "Books_left_panel";
-            this.Books_left_panel.Size = new System.Drawing.Size(18, 374);
+            this.Books_left_panel.Size = new System.Drawing.Size(18, 304);
             this.Books_left_panel.TabIndex = 11;
             // 
             // Books_label

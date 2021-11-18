@@ -54,7 +54,7 @@
             this.Targets_left_panel.Location = new System.Drawing.Point(9, 43);
             this.Targets_left_panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Targets_left_panel.Name = "Targets_left_panel";
-            this.Targets_left_panel.Size = new System.Drawing.Size(18, 374);
+            this.Targets_left_panel.Size = new System.Drawing.Size(18, 304);
             this.Targets_left_panel.TabIndex = 11;
             // 
             // Targets_label
