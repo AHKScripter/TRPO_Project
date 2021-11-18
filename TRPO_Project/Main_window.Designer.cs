@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace TRPO_Project
 {
     partial class Main_Window
@@ -29,13 +31,14 @@ namespace TRPO_Project
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Window));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.Main_menu_panel = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.Menu_button_minimized = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Menu_button_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -46,6 +49,8 @@ namespace TRPO_Project
             this.panel1 = new System.Windows.Forms.Panel();
             this.Menu_label_name = new System.Windows.Forms.Label();
             this.PicBox_Avatar = new System.Windows.Forms.PictureBox();
+            this.date = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Main_menu_panel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Avatar)).BeginInit();
@@ -70,9 +75,10 @@ namespace TRPO_Project
             this.Main_menu_panel.GradientTopLeft = System.Drawing.Color.Aqua;
             this.Main_menu_panel.GradientTopRight = System.Drawing.Color.DeepPink;
             this.Main_menu_panel.Location = new System.Drawing.Point(0, 0);
+            this.Main_menu_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Main_menu_panel.Name = "Main_menu_panel";
             this.Main_menu_panel.Quality = 10;
-            this.Main_menu_panel.Size = new System.Drawing.Size(200, 570);
+            this.Main_menu_panel.Size = new System.Drawing.Size(133, 370);
             this.Main_menu_panel.TabIndex = 0;
             // 
             // Menu_button_minimized
@@ -94,11 +100,11 @@ namespace TRPO_Project
             this.Menu_button_minimized.ColorContrastOnClick = 45;
             this.Menu_button_minimized.ColorContrastOnHover = 45;
             this.Menu_button_minimized.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Menu_button_minimized.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.Menu_button_minimized.CustomizableEdges = borderEdges7;
             this.Menu_button_minimized.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_minimized.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_minimized.DisabledFillColor = System.Drawing.Color.Empty;
@@ -124,7 +130,8 @@ namespace TRPO_Project
             this.Menu_button_minimized.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.minus_1;
             this.Menu_button_minimized.IdleIconRightImage = null;
             this.Menu_button_minimized.IndicateFocus = false;
-            this.Menu_button_minimized.Location = new System.Drawing.Point(0, 490);
+            this.Menu_button_minimized.Location = new System.Drawing.Point(0, 318);
+            this.Menu_button_minimized.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_button_minimized.Name = "Menu_button_minimized";
             this.Menu_button_minimized.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_button_minimized.OnDisabledState.BorderRadius = 0;
@@ -158,7 +165,7 @@ namespace TRPO_Project
             this.Menu_button_minimized.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_button_minimized.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.minus_2;
             this.Menu_button_minimized.OnPressedState.IconRightImage = null;
-            this.Menu_button_minimized.Size = new System.Drawing.Size(200, 60);
+            this.Menu_button_minimized.Size = new System.Drawing.Size(133, 39);
             this.Menu_button_minimized.TabIndex = 6;
             this.Menu_button_minimized.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_button_minimized.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -186,11 +193,11 @@ namespace TRPO_Project
             this.Menu_button_exit.ColorContrastOnClick = 45;
             this.Menu_button_exit.ColorContrastOnHover = 45;
             this.Menu_button_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Menu_button_exit.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.Menu_button_exit.CustomizableEdges = borderEdges8;
             this.Menu_button_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_exit.DisabledFillColor = System.Drawing.Color.Empty;
@@ -216,7 +223,8 @@ namespace TRPO_Project
             this.Menu_button_exit.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.emergency_exit_1;
             this.Menu_button_exit.IdleIconRightImage = null;
             this.Menu_button_exit.IndicateFocus = false;
-            this.Menu_button_exit.Location = new System.Drawing.Point(-3, 424);
+            this.Menu_button_exit.Location = new System.Drawing.Point(-2, 276);
+            this.Menu_button_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_button_exit.Name = "Menu_button_exit";
             this.Menu_button_exit.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_button_exit.OnDisabledState.BorderRadius = 0;
@@ -250,7 +258,7 @@ namespace TRPO_Project
             this.Menu_button_exit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_button_exit.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.emergency_exit_2;
             this.Menu_button_exit.OnPressedState.IconRightImage = null;
-            this.Menu_button_exit.Size = new System.Drawing.Size(200, 60);
+            this.Menu_button_exit.Size = new System.Drawing.Size(133, 39);
             this.Menu_button_exit.TabIndex = 5;
             this.Menu_button_exit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_button_exit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -278,11 +286,11 @@ namespace TRPO_Project
             this.Menu_button_ideas.ColorContrastOnClick = 45;
             this.Menu_button_ideas.ColorContrastOnHover = 45;
             this.Menu_button_ideas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Menu_button_ideas.CustomizableEdges = borderEdges3;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.Menu_button_ideas.CustomizableEdges = borderEdges9;
             this.Menu_button_ideas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_ideas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_ideas.DisabledFillColor = System.Drawing.Color.Empty;
@@ -308,7 +316,8 @@ namespace TRPO_Project
             this.Menu_button_ideas.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.idea_1;
             this.Menu_button_ideas.IdleIconRightImage = null;
             this.Menu_button_ideas.IndicateFocus = false;
-            this.Menu_button_ideas.Location = new System.Drawing.Point(-3, 358);
+            this.Menu_button_ideas.Location = new System.Drawing.Point(-2, 233);
+            this.Menu_button_ideas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_button_ideas.Name = "Menu_button_ideas";
             this.Menu_button_ideas.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_button_ideas.OnDisabledState.BorderRadius = 0;
@@ -342,7 +351,7 @@ namespace TRPO_Project
             this.Menu_button_ideas.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_button_ideas.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.idea_2;
             this.Menu_button_ideas.OnPressedState.IconRightImage = null;
-            this.Menu_button_ideas.Size = new System.Drawing.Size(200, 60);
+            this.Menu_button_ideas.Size = new System.Drawing.Size(133, 39);
             this.Menu_button_ideas.TabIndex = 4;
             this.Menu_button_ideas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_button_ideas.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -369,11 +378,11 @@ namespace TRPO_Project
             this.Menu_button_targets.ColorContrastOnClick = 45;
             this.Menu_button_targets.ColorContrastOnHover = 45;
             this.Menu_button_targets.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.Menu_button_targets.CustomizableEdges = borderEdges4;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.Menu_button_targets.CustomizableEdges = borderEdges10;
             this.Menu_button_targets.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_targets.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_targets.DisabledFillColor = System.Drawing.Color.Empty;
@@ -399,7 +408,8 @@ namespace TRPO_Project
             this.Menu_button_targets.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.target_1;
             this.Menu_button_targets.IdleIconRightImage = null;
             this.Menu_button_targets.IndicateFocus = false;
-            this.Menu_button_targets.Location = new System.Drawing.Point(0, 292);
+            this.Menu_button_targets.Location = new System.Drawing.Point(0, 190);
+            this.Menu_button_targets.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_button_targets.Name = "Menu_button_targets";
             this.Menu_button_targets.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_button_targets.OnDisabledState.BorderRadius = 0;
@@ -433,7 +443,7 @@ namespace TRPO_Project
             this.Menu_button_targets.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_button_targets.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.target_2;
             this.Menu_button_targets.OnPressedState.IconRightImage = null;
-            this.Menu_button_targets.Size = new System.Drawing.Size(200, 60);
+            this.Menu_button_targets.Size = new System.Drawing.Size(133, 39);
             this.Menu_button_targets.TabIndex = 3;
             this.Menu_button_targets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_button_targets.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -460,11 +470,11 @@ namespace TRPO_Project
             this.Menu_button_books.ColorContrastOnClick = 45;
             this.Menu_button_books.ColorContrastOnHover = 45;
             this.Menu_button_books.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.Menu_button_books.CustomizableEdges = borderEdges5;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.Menu_button_books.CustomizableEdges = borderEdges11;
             this.Menu_button_books.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_books.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_books.DisabledFillColor = System.Drawing.Color.Empty;
@@ -490,7 +500,8 @@ namespace TRPO_Project
             this.Menu_button_books.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.books_1;
             this.Menu_button_books.IdleIconRightImage = null;
             this.Menu_button_books.IndicateFocus = false;
-            this.Menu_button_books.Location = new System.Drawing.Point(0, 226);
+            this.Menu_button_books.Location = new System.Drawing.Point(0, 147);
+            this.Menu_button_books.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_button_books.Name = "Menu_button_books";
             this.Menu_button_books.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_button_books.OnDisabledState.BorderRadius = 0;
@@ -524,7 +535,7 @@ namespace TRPO_Project
             this.Menu_button_books.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_button_books.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.books_2;
             this.Menu_button_books.OnPressedState.IconRightImage = null;
-            this.Menu_button_books.Size = new System.Drawing.Size(200, 60);
+            this.Menu_button_books.Size = new System.Drawing.Size(133, 39);
             this.Menu_button_books.TabIndex = 2;
             this.Menu_button_books.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_button_books.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -551,11 +562,11 @@ namespace TRPO_Project
             this.Menu_Button_Learning.ColorContrastOnClick = 45;
             this.Menu_Button_Learning.ColorContrastOnHover = 45;
             this.Menu_Button_Learning.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.Menu_Button_Learning.CustomizableEdges = borderEdges6;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.Menu_Button_Learning.CustomizableEdges = borderEdges12;
             this.Menu_Button_Learning.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_Button_Learning.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_Button_Learning.DisabledFillColor = System.Drawing.Color.Empty;
@@ -581,7 +592,8 @@ namespace TRPO_Project
             this.Menu_Button_Learning.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.astronomy;
             this.Menu_Button_Learning.IdleIconRightImage = null;
             this.Menu_Button_Learning.IndicateFocus = false;
-            this.Menu_Button_Learning.Location = new System.Drawing.Point(0, 160);
+            this.Menu_Button_Learning.Location = new System.Drawing.Point(0, 104);
+            this.Menu_Button_Learning.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Menu_Button_Learning.Name = "Menu_Button_Learning";
             this.Menu_Button_Learning.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
             this.Menu_Button_Learning.OnDisabledState.BorderRadius = 0;
@@ -615,7 +627,7 @@ namespace TRPO_Project
             this.Menu_Button_Learning.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Menu_Button_Learning.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.astronomy_2;
             this.Menu_Button_Learning.OnPressedState.IconRightImage = null;
-            this.Menu_Button_Learning.Size = new System.Drawing.Size(200, 60);
+            this.Menu_Button_Learning.Size = new System.Drawing.Size(133, 39);
             this.Menu_Button_Learning.TabIndex = 1;
             this.Menu_Button_Learning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Menu_Button_Learning.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -628,8 +640,9 @@ namespace TRPO_Project
             this.panel1.Controls.Add(this.Menu_label_name);
             this.panel1.Controls.Add(this.PicBox_Avatar);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 154);
+            this.panel1.Size = new System.Drawing.Size(133, 100);
             this.panel1.TabIndex = 0;
             // 
             // Menu_label_name
@@ -637,9 +650,10 @@ namespace TRPO_Project
             this.Menu_label_name.AutoSize = true;
             this.Menu_label_name.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Menu_label_name.ForeColor = System.Drawing.Color.White;
-            this.Menu_label_name.Location = new System.Drawing.Point(55, 113);
+            this.Menu_label_name.Location = new System.Drawing.Point(37, 73);
+            this.Menu_label_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Menu_label_name.Name = "Menu_label_name";
-            this.Menu_label_name.Size = new System.Drawing.Size(89, 30);
+            this.Menu_label_name.Size = new System.Drawing.Size(60, 21);
             this.Menu_label_name.TabIndex = 1;
             this.Menu_label_name.Text = "Alex T.";
             this.Menu_label_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -647,20 +661,41 @@ namespace TRPO_Project
             // PicBox_Avatar
             // 
             this.PicBox_Avatar.Image = global::TRPO_Project.Properties.Resources.uranus;
-            this.PicBox_Avatar.Location = new System.Drawing.Point(50, 10);
+            this.PicBox_Avatar.Location = new System.Drawing.Point(33, 6);
+            this.PicBox_Avatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBox_Avatar.Name = "PicBox_Avatar";
-            this.PicBox_Avatar.Size = new System.Drawing.Size(100, 100);
+            this.PicBox_Avatar.Size = new System.Drawing.Size(67, 65);
             this.PicBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PicBox_Avatar.TabIndex = 0;
             this.PicBox_Avatar.TabStop = false;
             // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(71)))), ((int)(((byte)(127)))));
+            this.date.Location = new System.Drawing.Point(393, 0);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(181, 24);
+            this.date.TabIndex = 1;
+            this.date.Text = "18 ноября 2021г.";
+            this.date.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Main_Window
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 570);
+            this.ClientSize = new System.Drawing.Size(573, 370);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.Main_menu_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main_Window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ToDoList";
@@ -669,6 +704,7 @@ namespace TRPO_Project
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Avatar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -684,6 +720,8 @@ namespace TRPO_Project
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Menu_button_targets;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Menu_button_books;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Menu_button_minimized;
+        private System.Windows.Forms.Label date;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

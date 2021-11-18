@@ -26,5 +26,10 @@ namespace TRPO_Project
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            date.Text = DateTime.Today.ToLongDateString();
+        }
     }
 }
