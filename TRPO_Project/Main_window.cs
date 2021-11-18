@@ -16,5 +16,10 @@ namespace TRPO_Project
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            date.Text = DateTime.Today.ToLongDateString();
+        }
     }
 }
