@@ -31,11 +31,5 @@ namespace TRPO_Project
         {
             date.Text = DateTime.Today.ToLongDateString();
         }
-
-        private void Menu_Button_Learning_Click(object sender, EventArgs e)
-        {
-            Learning form = new Learning();
-            form.Show();
-        }
     }
 }
