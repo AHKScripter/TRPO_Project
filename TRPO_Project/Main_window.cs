@@ -16,5 +16,15 @@ namespace TRPO_Project
         {
             InitializeComponent();
         }
+
+        private void Menu_button_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Menu_button_minimized_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

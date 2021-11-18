@@ -165,6 +165,7 @@ namespace TRPO_Project
             this.Menu_button_minimized.TextMarginLeft = 0;
             this.Menu_button_minimized.TextPadding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.Menu_button_minimized.UseDefaultRadiusAndThickness = true;
+            this.Menu_button_minimized.Click += new System.EventHandler(this.Menu_button_minimized_Click);
             // 
             // Menu_button_exit
             // 
@@ -256,6 +257,7 @@ namespace TRPO_Project
             this.Menu_button_exit.TextMarginLeft = 0;
             this.Menu_button_exit.TextPadding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.Menu_button_exit.UseDefaultRadiusAndThickness = true;
+            this.Menu_button_exit.Click += new System.EventHandler(this.Menu_button_exit_Click);
             // 
             // Menu_button_ideas
             // 
@@ -658,7 +660,7 @@ namespace TRPO_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 570);
             this.Controls.Add(this.Main_menu_panel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_Window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ToDoList";
