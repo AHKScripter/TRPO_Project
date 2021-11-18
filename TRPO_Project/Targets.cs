@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TRPO_Project.Properties
+namespace TRPO_Project
 {
-    public partial class Learning : UserControl
+    public partial class Targets : UserControl
     {
-        public Learning()
+        public Targets()
         {
             InitializeComponent();
         }
