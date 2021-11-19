@@ -21,5 +21,10 @@ namespace TRPO_Project
             InitializeComponent();
             ToDoItem_lable_text.Text = text;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

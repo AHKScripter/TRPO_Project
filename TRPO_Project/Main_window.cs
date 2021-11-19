@@ -29,7 +29,8 @@ namespace TRPO_Project
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            date.Text = DateTime.Today.ToLongDateString();
+            date.Text = DateTime.Now.ToLongDateString();
+            time.Text = DateTime.Now.ToLongTimeString();
         }
 
         private void Menu_Button_Learning_Click(object sender, EventArgs e)
