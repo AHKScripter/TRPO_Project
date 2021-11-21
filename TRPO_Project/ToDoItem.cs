@@ -29,7 +29,7 @@ namespace TRPO_Project
             using (SQL)
             {
                 SQL.Open();
-                SqlCommand command = new SqlCommand("DELETE FROM TargetTab WHERE TargetID = '" + ToDoItem_lable_text.Text + "'", SQL);
+                SqlCommand command = new SqlCommand("DELETE FROM TargetTab WHERE TargetText = '" + ToDoItem_lable_text.Text + "'", SQL);
                 command.ExecuteNonQuery();
             }
 
