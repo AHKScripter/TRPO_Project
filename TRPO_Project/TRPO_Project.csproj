@@ -283,5 +283,11 @@
   <ItemGroup>
     <None Include="Resources\trash_bin2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\git2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

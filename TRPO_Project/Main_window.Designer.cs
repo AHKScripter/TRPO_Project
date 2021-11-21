@@ -33,12 +33,23 @@ namespace TRPO_Project
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Window));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            this.date = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ideas1 = new TRPO_Project.Ideas();
+            this.targets1 = new TRPO_Project.Targets();
+            this.learning1 = new TRPO_Project.Learning();
+            this.books1 = new TRPO_Project.Books();
+            this.time = new System.Windows.Forms.Label();
+            this.Main_window_button_author2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Main_window_button_author1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Main_menu_panel = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.Menu_button_minimized = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Menu_button_exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -49,17 +60,259 @@ namespace TRPO_Project
             this.panel1 = new System.Windows.Forms.Panel();
             this.Menu_label_name = new System.Windows.Forms.Label();
             this.PicBox_Avatar = new System.Windows.Forms.PictureBox();
-            this.date = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ideas1 = new TRPO_Project.Ideas();
-            this.targets1 = new TRPO_Project.Targets();
-            this.learning1 = new TRPO_Project.Learning();
-            this.books1 = new TRPO_Project.Books();
-            this.time = new System.Windows.Forms.Label();
+            this.Main_window_Elipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Main_menu_panel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Avatar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.date.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.date.Location = new System.Drawing.Point(569, 9);
+            this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(278, 38);
+            this.date.TabIndex = 1;
+            this.date.Text = "18 ноября 2021г.";
+            this.date.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ideas1
+            // 
+            this.ideas1.Location = new System.Drawing.Point(207, 149);
+            this.ideas1.Margin = new System.Windows.Forms.Padding(2);
+            this.ideas1.Name = "ideas1";
+            this.ideas1.Size = new System.Drawing.Size(650, 420);
+            this.ideas1.TabIndex = 5;
+            // 
+            // targets1
+            // 
+            this.targets1.Location = new System.Drawing.Point(207, 149);
+            this.targets1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.targets1.Name = "targets1";
+            this.targets1.Size = new System.Drawing.Size(650, 420);
+            this.targets1.TabIndex = 4;
+            // 
+            // learning1
+            // 
+            this.learning1.Location = new System.Drawing.Point(207, 149);
+            this.learning1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.learning1.Name = "learning1";
+            this.learning1.Size = new System.Drawing.Size(650, 420);
+            this.learning1.TabIndex = 3;
+            // 
+            // books1
+            // 
+            this.books1.Location = new System.Drawing.Point(207, 149);
+            this.books1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.books1.Name = "books1";
+            this.books1.Size = new System.Drawing.Size(650, 420);
+            this.books1.TabIndex = 2;
+            // 
+            // time
+            // 
+            this.time.AutoSize = true;
+            this.time.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.time.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.time.Location = new System.Drawing.Point(704, 47);
+            this.time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(143, 38);
+            this.time.TabIndex = 6;
+            this.time.Text = "10:08:21";
+            this.time.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Main_window_button_author2
+            // 
+            this.Main_window_button_author2.AllowAnimations = true;
+            this.Main_window_button_author2.AllowMouseEffects = true;
+            this.Main_window_button_author2.AllowToggling = false;
+            this.Main_window_button_author2.AnimationSpeed = 200;
+            this.Main_window_button_author2.AutoGenerateColors = false;
+            this.Main_window_button_author2.AutoRoundBorders = false;
+            this.Main_window_button_author2.AutoSizeLeftIcon = true;
+            this.Main_window_button_author2.AutoSizeRightIcon = true;
+            this.Main_window_button_author2.BackColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.Main_window_button_author2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Main_window_button_author2.BackgroundImage")));
+            this.Main_window_button_author2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author2.ButtonText = "Plugatyr S.D.";
+            this.Main_window_button_author2.ButtonTextMarginLeft = 0;
+            this.Main_window_button_author2.ColorContrastOnClick = 45;
+            this.Main_window_button_author2.ColorContrastOnHover = 45;
+            this.Main_window_button_author2.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.Main_window_button_author2.CustomizableEdges = borderEdges17;
+            this.Main_window_button_author2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Main_window_button_author2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Main_window_button_author2.DisabledFillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.DisabledForecolor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Main_window_button_author2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Main_window_button_author2.ForeColor = System.Drawing.Color.Black;
+            this.Main_window_button_author2.IconLeft = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Main_window_button_author2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Main_window_button_author2.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Main_window_button_author2.IconMarginLeft = 11;
+            this.Main_window_button_author2.IconPadding = 1;
+            this.Main_window_button_author2.IconRight = null;
+            this.Main_window_button_author2.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Main_window_button_author2.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Main_window_button_author2.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Main_window_button_author2.IconSize = 25;
+            this.Main_window_button_author2.IdleBorderColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.IdleBorderRadius = 0;
+            this.Main_window_button_author2.IdleBorderThickness = 0;
+            this.Main_window_button_author2.IdleFillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author2.IdleIconRightImage = null;
+            this.Main_window_button_author2.IndicateFocus = false;
+            this.Main_window_button_author2.Location = new System.Drawing.Point(207, 75);
+            this.Main_window_button_author2.Name = "Main_window_button_author2";
+            this.Main_window_button_author2.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.OnDisabledState.BorderRadius = 0;
+            this.Main_window_button_author2.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author2.OnDisabledState.BorderThickness = 0;
+            this.Main_window_button_author2.OnDisabledState.FillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.OnDisabledState.ForeColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author2.OnDisabledState.IconLeftImage = null;
+            this.Main_window_button_author2.OnDisabledState.IconRightImage = null;
+            this.Main_window_button_author2.onHoverState.BorderColor = System.Drawing.Color.Indigo;
+            this.Main_window_button_author2.onHoverState.BorderRadius = 0;
+            this.Main_window_button_author2.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author2.onHoverState.BorderThickness = 0;
+            this.Main_window_button_author2.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(36)))), ((int)(((byte)(95)))));
+            this.Main_window_button_author2.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Main_window_button_author2.onHoverState.IconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author2.onHoverState.IconRightImage = null;
+            this.Main_window_button_author2.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author2.OnIdleState.BorderRadius = 0;
+            this.Main_window_button_author2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author2.OnIdleState.BorderThickness = 0;
+            this.Main_window_button_author2.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author2.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.Main_window_button_author2.OnIdleState.IconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author2.OnIdleState.IconRightImage = null;
+            this.Main_window_button_author2.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author2.OnPressedState.BorderRadius = 0;
+            this.Main_window_button_author2.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author2.OnPressedState.BorderThickness = 0;
+            this.Main_window_button_author2.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author2.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Main_window_button_author2.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.git2;
+            this.Main_window_button_author2.OnPressedState.IconRightImage = null;
+            this.Main_window_button_author2.Size = new System.Drawing.Size(200, 50);
+            this.Main_window_button_author2.TabIndex = 8;
+            this.Main_window_button_author2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Main_window_button_author2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Main_window_button_author2.TextMarginLeft = 0;
+            this.Main_window_button_author2.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.Main_window_button_author2.UseDefaultRadiusAndThickness = true;
+            this.Main_window_button_author2.Click += new System.EventHandler(this.bunifuButton2_Click);
+            // 
+            // Main_window_button_author1
+            // 
+            this.Main_window_button_author1.AllowAnimations = true;
+            this.Main_window_button_author1.AllowMouseEffects = true;
+            this.Main_window_button_author1.AllowToggling = false;
+            this.Main_window_button_author1.AnimationSpeed = 200;
+            this.Main_window_button_author1.AutoGenerateColors = false;
+            this.Main_window_button_author1.AutoRoundBorders = false;
+            this.Main_window_button_author1.AutoSizeLeftIcon = true;
+            this.Main_window_button_author1.AutoSizeRightIcon = true;
+            this.Main_window_button_author1.BackColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.Main_window_button_author1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Main_window_button_author1.BackgroundImage")));
+            this.Main_window_button_author1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author1.ButtonText = "Taradoyna A.V.";
+            this.Main_window_button_author1.ButtonTextMarginLeft = 0;
+            this.Main_window_button_author1.ColorContrastOnClick = 45;
+            this.Main_window_button_author1.ColorContrastOnHover = 45;
+            this.Main_window_button_author1.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.Main_window_button_author1.CustomizableEdges = borderEdges18;
+            this.Main_window_button_author1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Main_window_button_author1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Main_window_button_author1.DisabledFillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.DisabledForecolor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Main_window_button_author1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Main_window_button_author1.ForeColor = System.Drawing.Color.Black;
+            this.Main_window_button_author1.IconLeft = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Main_window_button_author1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Main_window_button_author1.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Main_window_button_author1.IconMarginLeft = 11;
+            this.Main_window_button_author1.IconPadding = 1;
+            this.Main_window_button_author1.IconRight = null;
+            this.Main_window_button_author1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Main_window_button_author1.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Main_window_button_author1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Main_window_button_author1.IconSize = 25;
+            this.Main_window_button_author1.IdleBorderColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.IdleBorderRadius = 0;
+            this.Main_window_button_author1.IdleBorderThickness = 0;
+            this.Main_window_button_author1.IdleFillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.IdleIconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author1.IdleIconRightImage = null;
+            this.Main_window_button_author1.IndicateFocus = false;
+            this.Main_window_button_author1.Location = new System.Drawing.Point(206, 9);
+            this.Main_window_button_author1.Name = "Main_window_button_author1";
+            this.Main_window_button_author1.OnDisabledState.BorderColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.OnDisabledState.BorderRadius = 0;
+            this.Main_window_button_author1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author1.OnDisabledState.BorderThickness = 0;
+            this.Main_window_button_author1.OnDisabledState.FillColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.OnDisabledState.ForeColor = System.Drawing.Color.Empty;
+            this.Main_window_button_author1.OnDisabledState.IconLeftImage = null;
+            this.Main_window_button_author1.OnDisabledState.IconRightImage = null;
+            this.Main_window_button_author1.onHoverState.BorderColor = System.Drawing.Color.Indigo;
+            this.Main_window_button_author1.onHoverState.BorderRadius = 0;
+            this.Main_window_button_author1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author1.onHoverState.BorderThickness = 0;
+            this.Main_window_button_author1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(36)))), ((int)(((byte)(95)))));
+            this.Main_window_button_author1.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Main_window_button_author1.onHoverState.IconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author1.onHoverState.IconRightImage = null;
+            this.Main_window_button_author1.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author1.OnIdleState.BorderRadius = 0;
+            this.Main_window_button_author1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author1.OnIdleState.BorderThickness = 0;
+            this.Main_window_button_author1.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author1.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.Main_window_button_author1.OnIdleState.IconLeftImage = global::TRPO_Project.Properties.Resources.git1;
+            this.Main_window_button_author1.OnIdleState.IconRightImage = null;
+            this.Main_window_button_author1.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author1.OnPressedState.BorderRadius = 0;
+            this.Main_window_button_author1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Main_window_button_author1.OnPressedState.BorderThickness = 0;
+            this.Main_window_button_author1.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.Main_window_button_author1.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Main_window_button_author1.OnPressedState.IconLeftImage = global::TRPO_Project.Properties.Resources.git2;
+            this.Main_window_button_author1.OnPressedState.IconRightImage = null;
+            this.Main_window_button_author1.Size = new System.Drawing.Size(200, 50);
+            this.Main_window_button_author1.TabIndex = 7;
+            this.Main_window_button_author1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Main_window_button_author1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Main_window_button_author1.TextMarginLeft = 0;
+            this.Main_window_button_author1.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.Main_window_button_author1.UseDefaultRadiusAndThickness = true;
+            this.Main_window_button_author1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // Main_menu_panel
             // 
@@ -104,11 +357,11 @@ namespace TRPO_Project
             this.Menu_button_minimized.ColorContrastOnClick = 45;
             this.Menu_button_minimized.ColorContrastOnHover = 45;
             this.Menu_button_minimized.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Menu_button_minimized.CustomizableEdges = borderEdges1;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.Menu_button_minimized.CustomizableEdges = borderEdges19;
             this.Menu_button_minimized.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_minimized.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_minimized.DisabledFillColor = System.Drawing.Color.Empty;
@@ -196,11 +449,11 @@ namespace TRPO_Project
             this.Menu_button_exit.ColorContrastOnClick = 45;
             this.Menu_button_exit.ColorContrastOnHover = 45;
             this.Menu_button_exit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Menu_button_exit.CustomizableEdges = borderEdges2;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.Menu_button_exit.CustomizableEdges = borderEdges20;
             this.Menu_button_exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_exit.DisabledFillColor = System.Drawing.Color.Empty;
@@ -288,11 +541,11 @@ namespace TRPO_Project
             this.Menu_button_ideas.ColorContrastOnClick = 45;
             this.Menu_button_ideas.ColorContrastOnHover = 45;
             this.Menu_button_ideas.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Menu_button_ideas.CustomizableEdges = borderEdges3;
+            borderEdges21.BottomLeft = true;
+            borderEdges21.BottomRight = true;
+            borderEdges21.TopLeft = true;
+            borderEdges21.TopRight = true;
+            this.Menu_button_ideas.CustomizableEdges = borderEdges21;
             this.Menu_button_ideas.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_ideas.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_ideas.DisabledFillColor = System.Drawing.Color.Empty;
@@ -380,11 +633,11 @@ namespace TRPO_Project
             this.Menu_button_targets.ColorContrastOnClick = 45;
             this.Menu_button_targets.ColorContrastOnHover = 45;
             this.Menu_button_targets.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.Menu_button_targets.CustomizableEdges = borderEdges4;
+            borderEdges22.BottomLeft = true;
+            borderEdges22.BottomRight = true;
+            borderEdges22.TopLeft = true;
+            borderEdges22.TopRight = true;
+            this.Menu_button_targets.CustomizableEdges = borderEdges22;
             this.Menu_button_targets.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_targets.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_targets.DisabledFillColor = System.Drawing.Color.Empty;
@@ -472,11 +725,11 @@ namespace TRPO_Project
             this.Menu_button_books.ColorContrastOnClick = 45;
             this.Menu_button_books.ColorContrastOnHover = 45;
             this.Menu_button_books.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.Menu_button_books.CustomizableEdges = borderEdges5;
+            borderEdges23.BottomLeft = true;
+            borderEdges23.BottomRight = true;
+            borderEdges23.TopLeft = true;
+            borderEdges23.TopRight = true;
+            this.Menu_button_books.CustomizableEdges = borderEdges23;
             this.Menu_button_books.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_button_books.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_button_books.DisabledFillColor = System.Drawing.Color.Empty;
@@ -564,11 +817,11 @@ namespace TRPO_Project
             this.Menu_Button_Learning.ColorContrastOnClick = 45;
             this.Menu_Button_Learning.ColorContrastOnHover = 45;
             this.Menu_Button_Learning.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.Menu_Button_Learning.CustomizableEdges = borderEdges6;
+            borderEdges24.BottomLeft = true;
+            borderEdges24.BottomRight = true;
+            borderEdges24.TopLeft = true;
+            borderEdges24.TopRight = true;
+            this.Menu_Button_Learning.CustomizableEdges = borderEdges24;
             this.Menu_Button_Learning.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Menu_Button_Learning.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Menu_Button_Learning.DisabledFillColor = System.Drawing.Color.Empty;
@@ -668,74 +921,25 @@ namespace TRPO_Project
             this.PicBox_Avatar.TabIndex = 0;
             this.PicBox_Avatar.TabStop = false;
             // 
-            // date
+            // Main_window_Elipse1
             // 
-            this.date.AutoSize = true;
-            this.date.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(71)))), ((int)(((byte)(127)))));
-            this.date.Location = new System.Drawing.Point(590, 0);
-            this.date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(278, 38);
-            this.date.TabIndex = 1;
-            this.date.Text = "18 ноября 2021г.";
-            this.date.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Main_window_Elipse1.ElipseRadius = 15;
+            this.Main_window_Elipse1.TargetControl = this;
             // 
-            // timer1
+            // bunifuDragControl1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // ideas1
-            // 
-            this.ideas1.Location = new System.Drawing.Point(207, 149);
-            this.ideas1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ideas1.Name = "ideas1";
-            this.ideas1.Size = new System.Drawing.Size(650, 420);
-            this.ideas1.TabIndex = 5;
-            // 
-            // targets1
-            // 
-            this.targets1.Location = new System.Drawing.Point(207, 149);
-            this.targets1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.targets1.Name = "targets1";
-            this.targets1.Size = new System.Drawing.Size(650, 420);
-            this.targets1.TabIndex = 4;
-            // 
-            // learning1
-            // 
-            this.learning1.Location = new System.Drawing.Point(207, 149);
-            this.learning1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.learning1.Name = "learning1";
-            this.learning1.Size = new System.Drawing.Size(650, 420);
-            this.learning1.TabIndex = 3;
-            // 
-            // books1
-            // 
-            this.books1.Location = new System.Drawing.Point(207, 149);
-            this.books1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.books1.Name = "books1";
-            this.books1.Size = new System.Drawing.Size(650, 420);
-            this.books1.TabIndex = 2;
-            // 
-            // time
-            // 
-            this.time.AutoSize = true;
-            this.time.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.time.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(71)))), ((int)(((byte)(127)))));
-            this.time.Location = new System.Drawing.Point(718, 37);
-            this.time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(143, 38);
-            this.time.TabIndex = 6;
-            this.time.Text = "10:08:21";
-            this.time.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // Main_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 569);
+            this.Controls.Add(this.Main_window_button_author2);
+            this.Controls.Add(this.Main_window_button_author1);
             this.Controls.Add(this.time);
             this.Controls.Add(this.learning1);
             this.Controls.Add(this.books1);
@@ -743,7 +947,8 @@ namespace TRPO_Project
             this.Controls.Add(this.Main_menu_panel);
             this.Controls.Add(this.ideas1);
             this.Controls.Add(this.targets1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ToDoList";
@@ -775,6 +980,10 @@ namespace TRPO_Project
         private Targets targets1;
         private Ideas ideas1;
         private System.Windows.Forms.Label time;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Main_window_button_author1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Main_window_button_author2;
+        private Bunifu.Framework.UI.BunifuElipse Main_window_Elipse1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
 

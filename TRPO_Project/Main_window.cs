@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -51,6 +52,16 @@ namespace TRPO_Project
         private void Menu_button_ideas_Click(object sender, EventArgs e)
         {
             ideas1.BringToFront();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/Chikipooki/TRPO_Project"); 
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/AHKScripter/TRPO_Project");
         }
     }
 }
